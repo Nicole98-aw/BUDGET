@@ -32,5 +32,5 @@ test('should handle edit expense', () => {
 test('should handle removeExpense', () => {
   wrapper.find('button').simulate('click');
   expect(history.push).toHaveBeenLastCalledWith('/');
-  expect(editExpense).toHaveBeenLastCalledWith({ id: expenses[1].id });
+  expect(removeExpense).toHaveBeenLastCalledWith({ id: expenses[1].id });
 });
