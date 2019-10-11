@@ -1,16 +1,7 @@
-// const person = {
-//     name: 'Nicole',
-//     location: {
-//         city: 'Munich',
-//         temp: 88
-//     }
-// };
+const address = ['Juniper Street','Philadelphia'];
 
-// const { city, temp } = person.location;
+const [street,city] = address;
+console.log(city);
+console.log(street)
 
-// console.log(city);
 
-const address = ['Jupiter Street', 'Philadelphia'];
-
-const [ street, city ] = address;
-console.log(street);

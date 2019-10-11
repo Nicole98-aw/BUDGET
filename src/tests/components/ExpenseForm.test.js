@@ -9,8 +9,7 @@ test('should render ExpenseForm correctly', () => {
     expect(wrapper).toMatchSnapshot();
 });
 
-
-test('should render ExpenseForm correctly with expense date', () => {
+test('should render ExpenseForm correctly with expense data', () => {
     const wrapper = shallow(<ExpenseForm expense={expenses[1]} />);
     expect(wrapper).toMatchSnapshot();
 });
@@ -72,9 +71,8 @@ test('should call onSubmit prop for valid form submission', () => {
         description: expenses[0].description,
         amount: expenses[0].amount,
         note: expenses[0].note,
-        createdAt: expenses[0].createdAt        
+        createdAt: expenses[0].createdAt
     });
-
 });
 
 test('should set new date on date change', () => {

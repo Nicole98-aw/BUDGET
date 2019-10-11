@@ -38,22 +38,22 @@ test('should set text filter', () => {
     expect(state.text).toBe(text);
 });
 
-test('should start date filter', () => {
+test('should set startDate filter', () => {
     const startDate = moment();
     const action = {
         type: 'SET_START_DATE',
         startDate
     };
     const state = filtersReducer(undefined, action);
-    expect(state.startDate).toBe(startDate)
+    expect(state.startDate).toBe(startDate);
 });
 
-test('shouldset end date filter', () => {
+test('should set endDate filter', () => {
     const endDate = moment(100);
     const action = {
         type: 'SET_END_DATE',
         endDate
     };
     const state = filtersReducer(undefined, action);
-    expect(state.endDate).toBe(endDate)
-})
+    expect(state.endDate).toBe(endDate);
+});
